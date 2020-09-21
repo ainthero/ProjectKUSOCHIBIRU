@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/UB_th.dir/main.cpp.o CMakeFiles/UB_th.dir/Input.cpp.o CMakeFiles/UB_th.dir/Screen.cpp.o CMakeFiles/UB_th.dir/Player.cpp.o CMakeFiles/UB_th.dir/Geom.cpp.o  -o UB_th  -lSDL2 -lOpenGL -lSDL_image 
