@@ -4,6 +4,7 @@
 #pragma once
 
 #include <cmath>
+#include <SDL2/SDL_rect.h>
 
 struct point {
     double x, y;
@@ -45,3 +46,5 @@ double angle(point p12, point p1, point p2);
 
 
 point v_normal(line l1);
+
+bool check_collision(SDL_FRect A, SDL_FRect B);
