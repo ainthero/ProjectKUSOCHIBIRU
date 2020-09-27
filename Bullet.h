@@ -3,14 +3,17 @@
 //
 
 #pragma once
+
 #include "Geom.h"
 
-struct Bullet{
-    point vec;
-    double dir_angle;
-    double speed;
-    double acceleration;
+struct Bullet {
+    point vec{};
+    SDL_FRect hitbox{};
+    double dir_angle{};
+    double speed{};
+    double acceleration{};
 
+    Bullet(int x, int y);
 
     void update();
 };
