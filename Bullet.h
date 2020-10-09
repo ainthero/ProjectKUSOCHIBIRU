@@ -7,13 +7,14 @@
 #include "Geom.h"
 
 struct Bullet {
-    point vec{};
-    SDL_FRect hitbox{};
-    double dir_angle{};
-    double speed{};
-    double acceleration{};
+    point vec;
+    SDL_FRect hitbox;
+    double dir_angle;
+    double speed;
+    double acceleration;
+    double distance;
 
-    Bullet(int x, int y);
+    Bullet(int, int, double = -1);
 
     void update();
 };

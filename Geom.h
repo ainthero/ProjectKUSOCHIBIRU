@@ -4,7 +4,7 @@
 #pragma once
 
 #include <cmath>
-#include <SDL2/SDL_rect.h>
+#include <SDL_rect.h>
 
 struct point {
     double x, y;

@@ -4,21 +4,30 @@
 
 #pragma once
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
-namespace Screen {
+class Screen {
 
-    extern SDL_Window *win;
-    extern SDL_Renderer *renderer;
-    extern SDL_Color render_color;
-    extern int WIN_HEIGHT;
-    extern int WIN_WIDTH;
+    inline static Screen *p_screen;
+    SDL_Window *win;
+    SDL_Renderer *renderer;
+    SDL_Color render_color;
+
+    Screen();
 
 
-    void init();
+public:
+    const int WIN_HEIGHT = 768;
+    const int WIN_WIDTH = 1024;
+
+    static Screen *get_instance();
 
     void clean();
 
     void draw_current_state();
+
+    void set_renderer_color(SDL_Color);
+
+    void fill_rect(SDL_FRect const &);
 };
 
